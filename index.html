@@ -31,6 +31,13 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body>
+ 
+		<div class="popup" data-popup="popup-1">
+			<div class="popup-inner">
+				<iframe height="630" style="width: 100%" src="https://www.youtube-nocookie.com/embed/7Dr0j1p6op0?rel=0&amp;showinfo=0" frameborder="0" id="clearmySound"></iframe>
+				<a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+			</div>
+		</div>
 
 		<section id="sidebar">
 			<div class="inner">
@@ -450,6 +457,23 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<script>
+			$(function() {
+				//----- CLOSE
+				$('[data-popup-close]').on('click', function(e)  {
+					var targeted_popup_class = jQuery(this).attr('data-popup-close');
+					$('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+					$("#clearmySound").attr('src',''); 
+			 
+					e.preventDefault();
+				});
+			});
+			
+			$(window).load(function(){
+				$('[data-popup="' + "popup-1" + '"]').fadeIn(350);
+			});
+			</script>
 
 	</body>
 </html>
