@@ -3723,7 +3723,8 @@
 }
 
 #sidebar nav a.active {
-    color: #ffffff;
+	color: white;
+	border-bottom: 3px solid #c959c9;
 }
 
 #sidebar nav a {
@@ -3761,6 +3762,12 @@
 	}
 }
 
+/* ACtive title pour savoir où on est */
+
+.active-title {
+	color: white;
+}
+
 /* Tout ce qui attrait au popup du début */
 
 /* Outer */
@@ -3777,8 +3784,8 @@
  
 /* Inner */
 .popup-inner {
-    width: 95%;
-	max-width: 1140px;
+    width: 90%;
+	max-width: 800px;
     position:absolute;
     top:50%;
     left:50%;
