@@ -3866,4 +3866,21 @@
     border-style: solid;
     border-color: black transparent transparent transparent;
 }
+
+
+#donnees_OMS p
+{
+	font-family: "Calibri Light";
+}
+
+#donnees_OMS ul
+{
+	font-family: "Calibri Light";
+	font-size: 20px;
+}
+
+#donnees_OMS b
+{
+	font-weight: bold;
+}
 	
